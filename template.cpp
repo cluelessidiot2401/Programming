@@ -11,6 +11,18 @@ typedef long long ll;
 #define rfab(i,a,b) for(int i=a;i>=b;--i)
 #define MAX_LEN (int)(1e6)
 
+template<typename... T>
+void read(T&... args)
+{
+    ((cin >> args), ...);
+}
+
+template<typename... T>
+void write(T... args)
+{
+    ((cout << args), ...);
+}
+
 int main()
 {
     freopen("input.txt","r",stdin);
