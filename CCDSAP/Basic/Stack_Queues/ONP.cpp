@@ -24,7 +24,6 @@ bool isOperand(char c)
         if(c == operands[i])
             return true;
     return false;
-
 }
 
 int main()
