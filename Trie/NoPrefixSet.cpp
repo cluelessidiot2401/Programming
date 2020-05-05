@@ -59,7 +59,6 @@ int main()
 	// cin.tie(0);
 
     int n;
-    // read(n);
     cin>>n;
 
     bool good = true;
