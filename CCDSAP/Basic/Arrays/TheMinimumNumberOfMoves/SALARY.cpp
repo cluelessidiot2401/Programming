@@ -23,27 +23,20 @@ int main()
 	int t;
     cin>>t;
 
-    int a[101];
     while(t--)
     {
         int n;
         cin>>n;
 
-        f(i,n)  cin>>a[i];
-        sort(a,a+n);
-
-        long ans = 0;
-        int add = 0;
-        int diff = 0;
-        fab(i,1,n-1)
-        {
-            a[i] += add;
-            diff = (a[i] - a[i-1]);
-            ans += diff;
-            add += diff;
+        int sum = 0, minimumWage = 1e4 + 1;
+        f(i,n){
+            int currentWage;
+            cin>>currentWage;
+            sum += currentWage;
+            minimumWage = min(minimumWage, currentWage);
         }
+        int ans = sum - n * minimumWage;
         cout<<ans<<'\n';
-
     }
 
 }
