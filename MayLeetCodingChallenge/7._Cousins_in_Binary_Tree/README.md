@@ -9,19 +9,19 @@ Return true if and only if the nodes corresponding to the values x and y are cou
 
 
 # Example 1:
-        ![Example 1](./imgs/ex101.png)
+![Example 1](./imgs/ex101.png)
 
         Input: root = [1,2,3,4], x = 4, y = 3
         Output: false
 
 # Example 2:
-        ![Example 2](./imgs/ex201.png)
+![Example 2](./imgs/ex201.png)
 
         Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
         Output: true
 
 # Example 3:
-        ![Example 3](ex301.png)
+![Example 3](./imgs/ex301.png)
 
         Input: root = [1,2,3,null,4], x = 2, y = 3
         Output: false
