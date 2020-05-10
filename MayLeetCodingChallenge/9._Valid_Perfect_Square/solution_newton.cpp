@@ -7,19 +7,19 @@ public:
         if(num == 0)    return false;
         if(num == 1)    return true;
         
-        int sqrt = min(num, 46341); // can assign any initial value to this variable
+        int sqrt_num = min(num, 46341); // can assign any initial value to this variable
         int approximation;
         int minDiff = num;
         while(1)
         {
-            approximation = (sqrt + num/sqrt)/2;
-            int diff = abs(approximation - sqrt);
-            if(minDiff <= diff)
-                break;
+            approximation = (sqrt_num + num/ sqrt_num)/2;
+
+            int diff = abs(approximation - sqrt_num);
+            if(minDiff <= diff || minDiff == 0) return sqrt_num*sqrt_num == num;
             else    minDiff = diff;
-            if(minDiff == 0)    return sqrt*sqrt == num;
-            sqrt = approximation;
+            
+            sqrt_num = approximation;
         }
-        return sqrt*sqrt == num;
+        return sqrt_num*sqrt_num == num;
     }
 };
