@@ -17,7 +17,7 @@ public:
             if(minDiff <= diff)
                 break;
             else    minDiff = diff;
-            if(minDiff == 0)    sqrt*sqrt == num;
+            if(minDiff == 0)    return sqrt*sqrt == num;
             sqrt = approximation;
         }
         return sqrt*sqrt == num;
