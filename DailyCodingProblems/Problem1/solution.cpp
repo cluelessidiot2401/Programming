@@ -3,6 +3,7 @@
 #include <vector>
 #include <math.h>
 #include <cstring>
+#include <unordered_set>
 using namespace std;
 typedef long long ll;
 #define f(i,n) for(int i=0;i<n;++i)
@@ -10,6 +11,16 @@ typedef long long ll;
 #define fab(i,a,b) for(int i=a;i<=b;++i)
 #define rfab(i,a,b) for(int i=a;i>=b;--i)
 #define MAX_LEN (int)(1e6)
+
+bool pairWithGivenSum(vector<int>& a, int k)
+{
+    unordered_set<int> encountered;
+    for(int ai : a){
+        if(encountered.find(k - ai) != encountered.end())   return true;
+        encountered.insert(ai);
+    }
+    return false;
+}
 
 int main()
 {
@@ -23,7 +34,11 @@ int main()
 
     while(t--)
     {
-
+        int n, k;
+        cin>>n >> k;
+        vector<int> a(n);
+        f(i,n)  cin>>a[i];
+        cout << (pairWithGivenSum(a, k) ? "True" : "False") << '\n';
     }
 
 }

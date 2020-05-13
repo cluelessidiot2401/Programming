@@ -4,7 +4,7 @@ Given an arbitrary ransom note string and another string containing letters from
 
 Each letter in the magazine string can only be used once in your ransom note.
 
-# Note:
+## Note:
 
 You may assume that both strings contain only lowercase letters.
 
