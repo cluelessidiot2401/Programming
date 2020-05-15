@@ -10,6 +10,7 @@ typedef long long ll;
 #define fab(i,a,b) for(int i=a;i<=b;++i)
 #define rfab(i,a,b) for(int i=a;i>=b;--i)
 #define MAX_LEN (int)(1e6)
+#define deb(x)  cout << #x << " = " << x << "; ";
 
 int main()
 {

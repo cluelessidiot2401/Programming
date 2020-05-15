@@ -1,4 +1,4 @@
-# Remove K Digits
+# [Remove K Digits](https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3328/)
 
 Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
 
