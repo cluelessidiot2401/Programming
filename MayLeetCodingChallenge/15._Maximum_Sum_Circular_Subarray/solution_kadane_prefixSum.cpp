@@ -11,6 +11,14 @@ public:
         
         int n = a.size();
         if(n == 1)  return a[0];
+
+        /*
+            3, 5, -3, 4, -2, 5
+        ->  3  8   5  9  7   12
+            12 9    4   7    3   5   <-
+        =>  3  8   8  9   9   12
+            12 9   7  7   5   5  <=
+        */
         
         int ans = a[0], maxSoFar = a[0], maxEndingHere = a[0], prefix;
         vector<int> prefixMax(n);

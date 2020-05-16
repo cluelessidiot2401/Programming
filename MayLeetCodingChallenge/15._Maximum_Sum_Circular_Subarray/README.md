@@ -45,11 +45,11 @@ Also, a subarray may only include each element of the fixed buffer A at most onc
 ### Hint #1  
         For those of you who are familiar with the Kadane's algorithm, think in terms of that. For the newbies, Kadane's algorithm is used to finding the maximum sum subarray from a given array. This problem is a twist on that idea and it is advisable to read up on that algorithm first before starting this problem. Unless you already have a great algorithm brewing up in your mind in which case, go right ahead!
 
-### Hide Hint #2  
+### Hint #2  
 
 ![Hint 2](./imgs/circular_subarray_hint_2.png)
 
         What is an alternate way of representing a circular array so that it appears to be a straight array? Essentially, there are two cases of this problem that we need to take care of. Let's look at the figure below to understand those two cases:
 
-### Hide Hint #3  
+### Hint #3  
         The first case can be handled by the good old Kadane's algorithm. However, is there a smarter way of going about handling the second case as well?
