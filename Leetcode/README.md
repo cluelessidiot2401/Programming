@@ -9,6 +9,7 @@ Difficulty as tagged by leetcode -
 | Problem No | Title | Solution | Difficulty | Tags |
 |:-:|---|---|---|---|
 | 4 | [Median of Two Sorted Arrays](4._Median_of_Two_Sorted_Arrays/README.md) | [findMedianSortedArrays](4._Median_of_Two_Sorted_Arrays/solution.cpp) | Medium Hard | `Array`, `Sorting`, `Binary Search` |
+| 336 | [Palindrome Pairs](336._Palindrome_Pairs/README.md) | [palindromePairs: map solution](336._Palindrome_Pairs/solution_map.cpp), [palindromePairs: trie](336._Palindrome_Pairs/solution_trie.cpp) | Medium Hard | `String`, `Palindromes`, [ `Hashing` &#124; `Trie (Prefix Tree)` ] |
 | 1032 | [Stream of Characters](1032._Stream_of_Characters/README.md) | [StreamChecker](1032._Stream_of_Characters/solution.cpp) | Medium Hard | `Trie (Prefix Tree)` &#124; `Set` |
 
 * ## Medium
